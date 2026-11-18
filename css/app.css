@@ -1,0 +1,8 @@
+@layer reset, legacy, tokens, base, components, states, utilities;
+
+@import url('./legacy.css') layer(legacy);
+@import url('./tokens.css') layer(tokens);
+@import url('./base.css') layer(base);
+@import url('./components.css') layer(components);
+@import url('./states.css') layer(states);
+@import url('./utilities.css') layer(utilities);

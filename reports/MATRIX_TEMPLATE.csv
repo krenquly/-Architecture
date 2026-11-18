@@ -1,0 +1,27 @@
+Компонент;Вариант;Состояние;Тема;Ширина_px;Ожидаемое поведение;Факт_до;Факт_после;Статус_OK_FAIL;Доказательство
+button;primary;hover;light;1440;фон --color-accent-hover;не менялся;меняется;OK;matrix/btn1.png
+button;primary;active;dark;375;translateY(0);сдвиг;стабильно;OK;matrix/btn2.png
+button;danger;focus-visible;dark;375;outline виден;не было;есть;OK;matrix/btn3.png
+button;ghost;disabled;light;768;opacity .45;кликабелен;некликабелен;OK;matrix/btn4.png
+button;secondary;hover;dark;1024;surface-alt;без изменений;меняется;OK;matrix/btn5.png
+button;primary;default;light;320;ширина по контенту;overflow;впорядке;OK;matrix/btn6.png
+field;name;untouched;light;1440;нет ошибки;красный;норма;OK;matrix/f1.png
+field;email;invalid-after-blur;dark;375;aria-invalid=true;раньше;после blur;OK;matrix/f2.png
+field;email;valid-after-input;light;768;ошибка снята;оставалась;снята;OK;matrix/f3.png
+field;email;submit-invalid;dark;320;ошибка + сообщение;нет;есть;OK;matrix/f4.png
+card;default;long-text;light;320;без overflow;overflow;OK;OK;matrix/c1.png
+card;featured;nested-alert;dark;375;alert не наследует font-size;мелкий;норма;OK;matrix/c2.png
+card;nested;two-cards;light;1024;внутренняя не ломается;ломалась;OK;OK;matrix/c3.png
+tag;neutral;static;light;375;неинтерактивен;hover;нет hover;OK;matrix/t1.png
+tag;success;static;dark;768;контраст;низкий;OK;OK;matrix/t2.png
+tag;warning;static;light;1440;не меняет карточку;менял;OK;OK;matrix/t3.png
+alert;info;dismiss;light;375;закрывается;OK;OK;OK;matrix/a1.png
+alert;danger;contrast;dark;375;читаем;нечитаем;OK;OK;matrix/a2.png
+alert;success;restore;light;768;восстанавливается;OK;OK;OK;matrix/a3.png
+switch;on;tab;light;375;focus-visible;не было;есть;OK;matrix/s1.png
+switch;off;space;dark;375;переключается;нет;да;OK;matrix/s2.png
+switch;disabled;tab-skip;light;1024;пропускается;фокусился;пропуск;OK;matrix/s3.png
+dialog;open;modal;light;1024;:modal=true;false;true;OK;matrix/d1.png
+dialog;open;escape-return;dark;375;фокус к триггеру;терялся;возврат;OK;matrix/d2.png
+dialog;open;tab-trap;light;768;фокус внутри;уходил;внутри;OK;matrix/d3.png
+dialog;closed;backdrop;dark;1440;фон inert;активен;inert;OK;matrix/d4.png
